@@ -105,12 +105,11 @@ h2{
 
 header {
     border-bottom: 1px solid var(--light-pink);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 header .container {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -174,14 +173,16 @@ header > .container > ul > li:not(:first-of-type) {
 /* --- 1. HERO SECTION --- */
 
 .hero-section{
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* padding-top: 0;
+    padding-bottom: 0; */
     background-color: var(--dark-gray);
 }
 
 .hero-section .container{
-    padding-top: 200px;
-    padding-bottom: 200px;
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
 
     text-align: center;
     text-transform: uppercase;
@@ -237,6 +238,7 @@ header > .container > ul > li:not(:first-of-type) {
 }
 
 .advantages-section li {
+    width: 270px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -292,8 +294,10 @@ header > .container > ul > li:not(:first-of-type) {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .card {
@@ -318,9 +322,9 @@ header > .container > ul > li:not(:first-of-type) {
     margin: 0;
 }
 
-.our-team-section .card:not(:last-of-type) {
+/* .our-team-section .card:not(:last-of-type) {
     margin: 0 30px 0 0;
-}
+} */
 
 .our-team-section .card > img{
     width: 270px;
@@ -363,13 +367,14 @@ header > .container > ul > li:not(:first-of-type) {
 }
 
 .portfolio-cards-filter{
-    margin: 0 50% 50px 50%;
+    /* margin: 0 50% 50px 50%; */
+    margin-bottom: 50px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    gap: 30px;
+    /* justify-content: space-around; */
+    justify-content: center;
 }
 
 .portfolio-cards-filter button{
@@ -387,7 +392,7 @@ header > .container > ul > li:not(:first-of-type) {
     white-space: nowrap;
 }
 
-.portfolio-cards-filter li:not(:last-of-type) button {
+.portfolio-cards-filter li:not(:last-of-type) {
     margin-right: 8px;
 }
 
@@ -402,13 +407,13 @@ header > .container > ul > li:not(:first-of-type) {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-section .card {
+/* .portfolio-section .card {
     margin: 0 0 30px 0;
-}
+} */
 
-.portfolio-section .card:nth-of-type(n+7) {
+/* .portfolio-section .card:nth-of-type(n+7) {
     margin-bottom: 0px;
-}
+} */
 
 .portfolio-section .card > img {
     width: 370px;
@@ -447,9 +452,6 @@ header > .container > ul > li:not(:first-of-type) {
 
 footer{
     background: var(--dark-gray);
-}
-
-footer .container{
     padding-top: 60px;
     padding-bottom: 60px;
 }
